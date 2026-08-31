@@ -4,9 +4,12 @@
   "description": "A small CRUD API built with Node.js, Express and MongoDB.",
   "main": "src/server.js",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js"
+    "start": "node src/server.js"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
   "dependencies": {
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
