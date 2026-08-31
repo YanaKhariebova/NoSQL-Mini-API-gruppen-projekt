@@ -1,4 +1,4 @@
-// importiere die benötigten Module und Controller
+// Importiere die benötigten Module und Controller
 import express from "express";
 import {
   getUsers,
