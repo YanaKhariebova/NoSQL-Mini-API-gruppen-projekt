@@ -2,11 +2,9 @@ import express from "express";
 import userRoutes from "./routes/userRoutes.js";
 import errorHandler from "./middlewares/errorHandler.js";
 import connectDB from "./database/connectDB.js";
-import notFound from "./middlewares/notFound.js";
 
-
-import userRoutes from './routes/userRoutes.js';
-import { notFound, errorHandler } from './middleware/errorMiddleware.js';
+import userRoutes from "./routes/userRoutes.js";
+import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
 
 const app = express();
 const PORT = Number(process.env.PORT || 3000);
