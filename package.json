@@ -4,12 +4,8 @@
   "description": "A small CRUD API built with Node.js, Express and MongoDB.",
   "main": "src/server.js",
   "scripts": {
-    "start": "node src/server.js"
+    "start": "node --env-file-if-exists=.env src/server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
   "dependencies": {
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
