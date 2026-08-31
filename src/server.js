@@ -2,8 +2,6 @@ import express from "express";
 import userRoutes from "./routes/userRoutes.js";
 import errorHandler from "./middlewares/errorHandler.js";
 import connectDB from "./database/connectDB.js";
-
-import userRoutes from "./routes/userRoutes.js";
 import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
 
 const app = express();
