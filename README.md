@@ -16,7 +16,7 @@ CRUD-Operationen: Nutzer erstellen, lesen, aktualisieren und loeschen.
 1. Repository klonen und in den Projektordner wechseln:
 
    ```bash
-   git clone https://github.com/YanaKhariebova/NoSQL-Mini-API-gruppen-projekt
+   git clone https://github.com/YanaKhariebova/NoSQL-Mini-API-gruppen-projekt.git
    cd NoSQL-Mini-API-gruppen-projekt
    ```
 
