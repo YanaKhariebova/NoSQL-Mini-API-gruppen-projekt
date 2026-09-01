@@ -1,8 +1,8 @@
 import express from "express";
 import userRoutes from "./routes/userRoutes.js";
+import notFound from "./middlewares/notFound.js";
 import errorHandler from "./middlewares/errorHandler.js";
 import connectDB from "./database/connectDB.js";
-import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
 
 const app = express();
 const PORT = Number(process.env.PORT || 3000);
@@ -12,10 +12,7 @@ console.log("PORT NUMMER:", PORT);
 app.use(express.json());
 app.use("/users", userRoutes);
 
-app.use((req, res) => {
-  res.status(404).json({ success: false, message: "Route not found" });
-});
-
+app.use(notFound);
 app.use(errorHandler);
 
 const startServer = async () => {
