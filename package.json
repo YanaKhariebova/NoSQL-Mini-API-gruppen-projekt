@@ -1,21 +1,30 @@
 {
-  "name": "nosql-mini-api",
+  "name": "nosql-mini-api-gruppen-projekt",
   "version": "1.0.0",
   "description": "A small CRUD API built with Node.js, Express and MongoDB.",
   "main": "src/server.js",
   "scripts": {
-    "start": "node src/server.js"
+    "start": "node --env-file-if-exists=.env src/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongodb": "^7.6.0",
+    "mongoose": "^8.24.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com..."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
-  "dependencies": {
-    "dotenv": "^17.2.2",
-    "express": "^5.1.0",
-    "mongoose": "^8.18.0"
+  "bugs": {
+    "url": "https://github.com..."
   },
-  "devDependencies": {
-    "nodemon": "^3.1.10"
-  }
+  "homepage": "https://github.com..."
 }
