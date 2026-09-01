@@ -10,8 +10,16 @@ const PORT = Number(process.env.PORT || 3000);
 console.log("PORT NUMMER:", PORT);
 
 app.use(express.json());
-app.use("/users", userRoutes);
 
+app.get("/", (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: "API is running",
+    routes: ["/users"],
+  });
+});
+
+app.use("/users", userRoutes);
 app.use(notFound);
 app.use(errorHandler);
 
